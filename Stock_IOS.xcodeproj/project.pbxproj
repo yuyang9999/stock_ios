@@ -15,6 +15,10 @@
 		8638623A20042EC10009509E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638623920042EC10009509E /* main.m */; };
 		8638624420042EC10009509E /* Stock_IOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638624320042EC10009509E /* Stock_IOSTests.m */; };
 		8638624F20042EC10009509E /* Stock_IOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638624E20042EC10009509E /* Stock_IOSUITests.m */; };
+		86386262200439510009509E /* CustomNaviControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86386261200439510009509E /* CustomNaviControllerViewController.m */; };
+		86386265200439C00009509E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86386264200439C00009509E /* HomeViewController.m */; };
+		8638626820043A220009509E /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638626720043A220009509E /* LeftMenuViewController.m */; };
+		8940C381719BAAD9E3288A07 /* libPods-Stock_IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C620A8C5D1F7ABDDAEEEAF1B /* libPods-Stock_IOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0963143A760AC9E08B7B9D69 /* Pods-Stock_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock_IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stock_IOS/Pods-Stock_IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3BD913BCE8D9B0098414E2D8 /* Pods-Stock_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock_IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stock_IOS/Pods-Stock_IOS.release.xcconfig"; sourceTree = "<group>"; };
 		8638622720042EC10009509E /* Stock_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8638622A20042EC10009509E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8638622B20042EC10009509E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +57,13 @@
 		8638624A20042EC10009509E /* Stock_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stock_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8638624E20042EC10009509E /* Stock_IOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stock_IOSUITests.m; sourceTree = "<group>"; };
 		8638625020042EC10009509E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86386260200439510009509E /* CustomNaviControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNaviControllerViewController.h; sourceTree = "<group>"; };
+		86386261200439510009509E /* CustomNaviControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNaviControllerViewController.m; sourceTree = "<group>"; };
+		86386263200439C00009509E /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		86386264200439C00009509E /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		8638626620043A220009509E /* LeftMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		8638626720043A220009509E /* LeftMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		C620A8C5D1F7ABDDAEEEAF1B /* libPods-Stock_IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stock_IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8940C381719BAAD9E3288A07 /* libPods-Stock_IOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +99,8 @@
 				8638624220042EC10009509E /* Stock_IOSTests */,
 				8638624D20042EC10009509E /* Stock_IOSUITests */,
 				8638622820042EC10009509E /* Products */,
+				A74E211E2ACDC40639C29BE6 /* Pods */,
+				EDBED13B2745FA93F252527F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +117,7 @@
 		8638622920042EC10009509E /* Stock_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				8638625C200438800009509E /* UIs */,
 				8638622A20042EC10009509E /* AppDelegate.h */,
 				8638622B20042EC10009509E /* AppDelegate.m */,
 				8638622D20042EC10009509E /* ViewController.h */,
@@ -132,6 +149,36 @@
 			path = Stock_IOSUITests;
 			sourceTree = "<group>";
 		};
+		8638625C200438800009509E /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+				86386260200439510009509E /* CustomNaviControllerViewController.h */,
+				86386261200439510009509E /* CustomNaviControllerViewController.m */,
+				86386263200439C00009509E /* HomeViewController.h */,
+				86386264200439C00009509E /* HomeViewController.m */,
+				8638626620043A220009509E /* LeftMenuViewController.h */,
+				8638626720043A220009509E /* LeftMenuViewController.m */,
+			);
+			path = UIs;
+			sourceTree = "<group>";
+		};
+		A74E211E2ACDC40639C29BE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0963143A760AC9E08B7B9D69 /* Pods-Stock_IOS.debug.xcconfig */,
+				3BD913BCE8D9B0098414E2D8 /* Pods-Stock_IOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EDBED13B2745FA93F252527F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C620A8C5D1F7ABDDAEEEAF1B /* libPods-Stock_IOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8638625320042EC10009509E /* Build configuration list for PBXNativeTarget "Stock_IOS" */;
 			buildPhases = (
+				4E853A89E1458E20460C2C0D /* [CP] Check Pods Manifest.lock */,
 				8638622320042EC10009509E /* Sources */,
 				8638622420042EC10009509E /* Frameworks */,
 				8638622520042EC10009509E /* Resources */,
+				157B948A6AD9D45D020B3945 /* [CP] Embed Pods Frameworks */,
+				99983DF00B0B548BB48876D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +310,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		157B948A6AD9D45D020B3945 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stock_IOS/Pods-Stock_IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E853A89E1458E20460C2C0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stock_IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99983DF00B0B548BB48876D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stock_IOS/Pods-Stock_IOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8638622320042EC10009509E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,6 +369,9 @@
 				8638622F20042EC10009509E /* ViewController.m in Sources */,
 				8638623A20042EC10009509E /* main.m in Sources */,
 				8638622C20042EC10009509E /* AppDelegate.m in Sources */,
+				86386265200439C00009509E /* HomeViewController.m in Sources */,
+				8638626820043A220009509E /* LeftMenuViewController.m in Sources */,
+				86386262200439510009509E /* CustomNaviControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +532,7 @@
 		};
 		8638625420042EC10009509E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0963143A760AC9E08B7B9D69 /* Pods-Stock_IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +547,7 @@
 		};
 		8638625520042EC10009509E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BD913BCE8D9B0098414E2D8 /* Pods-Stock_IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
