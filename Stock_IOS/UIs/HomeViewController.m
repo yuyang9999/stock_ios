@@ -8,6 +8,9 @@
 
 #import "HomeViewController.h"
 #import <RESideMenu/RESideMenu.h>
+#import "NetworkUtil.h"
+#import "NetworkApi.h"
+#import "Profile.h"
 
 @interface HomeViewController ()
 
@@ -28,8 +31,26 @@
 }
 
 - (void)buttonPressed:(id)sender {
-    RESideMenu *rootVc = (RESideMenu *)self.view.window.rootViewController;
-    [rootVc presentLeftMenuViewController];
+//    RESideMenu *rootVc = (RESideMenu *)self.view.window.rootViewController;
+//    [rootVc presentLeftMenuViewController];
+//    /[NetworkUtil test];
+    [NetworkUtil authWithUserName:@"tom" password:@"111111" completionHandler:^(BOOL succeed, NSError *error) {
+        if (succeed) {
+//            [NetworkUtil requestGetWithPath:@"/api/profiles" parameters:nil completionHandler:^(BOOL succeed, NSError *error, id obj) {
+//                if (!succeed) {
+//                    NSLog(@"%@", error);
+//                }
+//            }];
+            [NetworkApi getProfiles:^(BOOL succeed, NSString *errorMsg, id obj) {
+                if (succeed) {
+                    NSArray<Profile*> *resp = obj;
+                    NSLog(@"%@", resp);
+                }
+            }];
+            
+        }
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

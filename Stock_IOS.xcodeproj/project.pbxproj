@@ -18,6 +18,11 @@
 		86386262200439510009509E /* CustomNaviControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86386261200439510009509E /* CustomNaviControllerViewController.m */; };
 		86386265200439C00009509E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86386264200439C00009509E /* HomeViewController.m */; };
 		8638626820043A220009509E /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638626720043A220009509E /* LeftMenuViewController.m */; };
+		8638626D200440AA0009509E /* NetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638626C200440AA0009509E /* NetworkUtil.m */; };
+		8646BD0A20065A69005063EF /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646BD0920065A69005063EF /* Profile.m */; };
+		8646BD0D20065FAE005063EF /* ApiResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646BD0C20065FAE005063EF /* ApiResp.m */; };
+		8646BD102006D859005063EF /* NetworkApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646BD0F2006D859005063EF /* NetworkApi.m */; };
+		8646BD132006D972005063EF /* ProfileStock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646BD122006D972005063EF /* ProfileStock.m */; };
 		8940C381719BAAD9E3288A07 /* libPods-Stock_IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C620A8C5D1F7ABDDAEEEAF1B /* libPods-Stock_IOS.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +68,16 @@
 		86386264200439C00009509E /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		8638626620043A220009509E /* LeftMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
 		8638626720043A220009509E /* LeftMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		8638626B200440AA0009509E /* NetworkUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkUtil.h; sourceTree = "<group>"; };
+		8638626C200440AA0009509E /* NetworkUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkUtil.m; sourceTree = "<group>"; };
+		8646BD0820065A69005063EF /* Profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		8646BD0920065A69005063EF /* Profile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		8646BD0B20065FAE005063EF /* ApiResp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiResp.h; sourceTree = "<group>"; };
+		8646BD0C20065FAE005063EF /* ApiResp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiResp.m; sourceTree = "<group>"; };
+		8646BD0E2006D859005063EF /* NetworkApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkApi.h; sourceTree = "<group>"; };
+		8646BD0F2006D859005063EF /* NetworkApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkApi.m; sourceTree = "<group>"; };
+		8646BD112006D972005063EF /* ProfileStock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileStock.h; sourceTree = "<group>"; };
+		8646BD122006D972005063EF /* ProfileStock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileStock.m; sourceTree = "<group>"; };
 		C620A8C5D1F7ABDDAEEEAF1B /* libPods-Stock_IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stock_IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +132,9 @@
 		8638622920042EC10009509E /* Stock_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				8638626E200509FE0009509E /* Utility */,
+				8638626A2004408C0009509E /* Network */,
+				86386269200440740009509E /* Models */,
 				8638625C200438800009509E /* UIs */,
 				8638622A20042EC10009509E /* AppDelegate.h */,
 				8638622B20042EC10009509E /* AppDelegate.m */,
@@ -160,6 +178,37 @@
 				8638626720043A220009509E /* LeftMenuViewController.m */,
 			);
 			path = UIs;
+			sourceTree = "<group>";
+		};
+		86386269200440740009509E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8646BD0820065A69005063EF /* Profile.h */,
+				8646BD0920065A69005063EF /* Profile.m */,
+				8646BD0B20065FAE005063EF /* ApiResp.h */,
+				8646BD0C20065FAE005063EF /* ApiResp.m */,
+				8646BD112006D972005063EF /* ProfileStock.h */,
+				8646BD122006D972005063EF /* ProfileStock.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8638626A2004408C0009509E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8638626B200440AA0009509E /* NetworkUtil.h */,
+				8638626C200440AA0009509E /* NetworkUtil.m */,
+				8646BD0E2006D859005063EF /* NetworkApi.h */,
+				8646BD0F2006D859005063EF /* NetworkApi.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8638626E200509FE0009509E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		A74E211E2ACDC40639C29BE6 /* Pods */ = {
@@ -366,12 +415,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8646BD0D20065FAE005063EF /* ApiResp.m in Sources */,
 				8638622F20042EC10009509E /* ViewController.m in Sources */,
 				8638623A20042EC10009509E /* main.m in Sources */,
+				8646BD0A20065A69005063EF /* Profile.m in Sources */,
 				8638622C20042EC10009509E /* AppDelegate.m in Sources */,
 				86386265200439C00009509E /* HomeViewController.m in Sources */,
+				8638626D200440AA0009509E /* NetworkUtil.m in Sources */,
 				8638626820043A220009509E /* LeftMenuViewController.m in Sources */,
 				86386262200439510009509E /* CustomNaviControllerViewController.m in Sources */,
+				8646BD102006D859005063EF /* NetworkApi.m in Sources */,
+				8646BD132006D972005063EF /* ProfileStock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
