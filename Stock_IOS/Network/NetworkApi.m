@@ -62,7 +62,7 @@
 
 + (void)createProfile:(NSString *)pname completionHandler:(CompletionWithErrorMsg)handler {
     NSString *path = [API_PREFIX stringByAppendingString:PROFILE_CREATE];
-    [NetworkUtil requestGetWithPath:path parameters:@{@"pname":path} completionHandler:^(BOOL succeed, NSString *error, id obj) {
+    [NetworkUtil requestGetWithPath:path parameters:@{@"pname":pname} completionHandler:^(BOOL succeed, NSString *error, id obj) {
         ApiBoolResp *resp = (ApiBoolResp *)[self handleResp:obj netWorkStatus:succeed netWorkErrorMsg:error compltionHandler:handler cls:ApiBoolResp.class];
         if (resp) {
             handler(YES, nil, nil);
@@ -80,9 +80,9 @@
     }];
 }
 
-+ (void)getProfileStocks:(Profile *)profile completionHandler:(CompletionhandlerWithObj)handler {
++ (void)getProfileStocks:(NSString *)pname completionHandler:(CompletionhandlerWithObj)handler {
     NSString *path = [API_PREFIX stringByAppendingString:PROFILE_SYMBOL];
-    [NetworkUtil requestGetWithPath:path parameters:@{@"pname": profile.pname} completionHandler:^(BOOL succeed, NSString *error, id obj) {
+    [NetworkUtil requestGetWithPath:path parameters:@{@"pname": pname} completionHandler:^(BOOL succeed, NSString *error, id obj) {
         ApiProfileStockResp *resp = (ApiProfileStockResp *)[self handleResp:obj netWorkStatus:succeed netWorkErrorMsg:error compltionHandler:handler cls:ApiProfileStockResp.class];
         if (resp) {
             handler(YES, nil, resp.response);

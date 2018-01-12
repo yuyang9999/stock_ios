@@ -21,7 +21,7 @@ typedef void (^CompletionWithErrorMsg)(BOOL succeed, NSString *errorMsg, id obj)
 
 + (void)deleteProfie:(NSString *)pname completionHandler:(CompletionhandlerWithObj)handler;
 
-+ (void)getProfileStocks:(Profile *) profile completionHandler:(CompletionhandlerWithObj)handler;
++ (void)getProfileStocks:(NSString *) pname completionHandler:(CompletionhandlerWithObj)handler;
 
 + (void)addProfileStock:(NSString *)pname stockName:(NSString *)sname completionHandler:(CompletionhandlerWithObj)handler;
 

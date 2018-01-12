@@ -7,11 +7,12 @@
 //
 
 #import <JSONModel/JSONModel.h>
+#import "ModelBase.h"
 
 @protocol Profile;
 
 
-@interface Profile : JSONModel
+@interface Profile : ModelBase
 
 @property (readwrite, nonatomic) int pid;
 @property (readwrite, nonatomic) int userId;

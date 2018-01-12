@@ -1,29 +1,25 @@
 //
-//  CustomNaviControllerViewController.m
+//  HomeTabViewController.m
 //  Stock_IOS
 //
-//  Created by yang yu on 9/1/18.
+//  Created by yang yu on 12/1/18.
 //  Copyright © 2018年 yang yu. All rights reserved.
 //
 
-#import "CustomNaviControllerViewController.h"
+#import "HomeTabViewController.h"
 #import <RESideMenu.h>
 
-@interface CustomNaviControllerViewController ()
+@interface HomeTabViewController ()
 
 @end
 
-@implementation CustomNaviControllerViewController
+@implementation HomeTabViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
     
+    //configure the navigation controller
     UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(leftMenuItemSelected)];
     self.navigationItem.leftBarButtonItem = left;
 }
@@ -33,6 +29,10 @@
     [rootVc presentLeftMenuViewController];
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 /*
 #pragma mark - Navigation

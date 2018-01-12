@@ -86,7 +86,7 @@
 
 + (void)requestPostWithPath:(NSString *)path paramaters:(NSDictionary *)parameters completionHandler:(CompletionhandlerWithObj)handler {
     if (![self isAuthorized]) {
-        //
+        //todo jump to auth view controller
         handler(NO, nil, nil);
         return;
     }
@@ -99,7 +99,7 @@
         
         handler(YES, nil, responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        handler(NO, error, nil);
+        handler(NO, error.localizedDescription, nil);
     }];
     
 }

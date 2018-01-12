@@ -1,19 +1,18 @@
 //
-//  CustomNaviControllerViewController.m
+//  RootViewController.m
 //  Stock_IOS
 //
-//  Created by yang yu on 9/1/18.
+//  Created by yang yu on 12/1/18.
 //  Copyright © 2018年 yang yu. All rights reserved.
 //
 
-#import "CustomNaviControllerViewController.h"
-#import <RESideMenu.h>
+#import "RootViewController.h"
 
-@interface CustomNaviControllerViewController ()
+@interface RootViewController ()
 
 @end
 
-@implementation CustomNaviControllerViewController
+@implementation RootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,16 +22,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    
-    UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(leftMenuItemSelected)];
-    self.navigationItem.leftBarButtonItem = left;
 }
-
-- (void)leftMenuItemSelected {
-    RESideMenu *rootVc = (RESideMenu *)self.view.window.rootViewController;
-    [rootVc presentLeftMenuViewController];
-}
-
 
 /*
 #pragma mark - Navigation
@@ -43,5 +33,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+    self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentViewController"];
+    self.leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"leftMenuViewController"];
+}
 
 @end

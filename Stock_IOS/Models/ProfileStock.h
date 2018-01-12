@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <JSONModel/JSONModel.h>
-
+#import "ModelBase.h"
 
 @protocol ProfileStock;
 
-@interface ProfileStock : JSONModel
+@interface ProfileStock : ModelBase
 
 @property (readwrite, nonatomic) int sid;
 @property (readwrite, nonatomic) int userId;

@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "CustomNaviControllerViewController.h"
-#import "HomeViewController.h"
 #import "LeftMenuViewController.h"
 #import <RESideMenu/ResideMenu.h>
 
@@ -21,14 +20,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    CustomNaviControllerViewController *navi = [[CustomNaviControllerViewController alloc] initWithRootViewController:[[HomeViewController alloc] init]];
-    LeftMenuViewController *left=  [[LeftMenuViewController alloc] init];
-    
-    RESideMenu *sideMenuVC = [[RESideMenu alloc] initWithContentViewController:navi leftMenuViewController:left rightMenuViewController:NULL];
-    
-    sideMenuVC.scaleContentView = NO;
-    
-    self.window.rootViewController = sideMenuVC;
+//    CustomNaviControllerViewController *navi = [[CustomNaviControllerViewController alloc] initWithRootViewController:[[HomeViewController alloc] init]];
+//    LeftMenuViewController *left=  [[LeftMenuViewController alloc] init];
+//    
+//    RESideMenu *sideMenuVC = [[RESideMenu alloc] initWithContentViewController:navi leftMenuViewController:left rightMenuViewController:NULL];
+//    
+//    sideMenuVC.scaleContentView = NO;
+//    
+//    self.window.rootViewController = sideMenuVC;
     return YES;
 }
 

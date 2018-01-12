@@ -16,13 +16,16 @@
 		8638624420042EC10009509E /* Stock_IOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638624320042EC10009509E /* Stock_IOSTests.m */; };
 		8638624F20042EC10009509E /* Stock_IOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638624E20042EC10009509E /* Stock_IOSUITests.m */; };
 		86386262200439510009509E /* CustomNaviControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86386261200439510009509E /* CustomNaviControllerViewController.m */; };
-		86386265200439C00009509E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86386264200439C00009509E /* HomeViewController.m */; };
 		8638626820043A220009509E /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638626720043A220009509E /* LeftMenuViewController.m */; };
 		8638626D200440AA0009509E /* NetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638626C200440AA0009509E /* NetworkUtil.m */; };
 		8646BD0A20065A69005063EF /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646BD0920065A69005063EF /* Profile.m */; };
 		8646BD0D20065FAE005063EF /* ApiResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646BD0C20065FAE005063EF /* ApiResp.m */; };
 		8646BD102006D859005063EF /* NetworkApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646BD0F2006D859005063EF /* NetworkApi.m */; };
 		8646BD132006D972005063EF /* ProfileStock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646BD122006D972005063EF /* ProfileStock.m */; };
+		865E430C200837AE002D069E /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E430B200837AE002D069E /* ModelBase.m */; };
+		865E430F2009049E002D069E /* HomeTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E430E2009049E002D069E /* HomeTabViewController.m */; };
+		865E43122009064F002D069E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E43112009064F002D069E /* RootViewController.m */; };
+		865E4315200911FB002D069E /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E4314200911FB002D069E /* ProfileTableViewController.m */; };
 		8940C381719BAAD9E3288A07 /* libPods-Stock_IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C620A8C5D1F7ABDDAEEEAF1B /* libPods-Stock_IOS.a */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +67,6 @@
 		8638625020042EC10009509E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86386260200439510009509E /* CustomNaviControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNaviControllerViewController.h; sourceTree = "<group>"; };
 		86386261200439510009509E /* CustomNaviControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNaviControllerViewController.m; sourceTree = "<group>"; };
-		86386263200439C00009509E /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		86386264200439C00009509E /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		8638626620043A220009509E /* LeftMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
 		8638626720043A220009509E /* LeftMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		8638626B200440AA0009509E /* NetworkUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkUtil.h; sourceTree = "<group>"; };
@@ -78,6 +79,14 @@
 		8646BD0F2006D859005063EF /* NetworkApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkApi.m; sourceTree = "<group>"; };
 		8646BD112006D972005063EF /* ProfileStock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileStock.h; sourceTree = "<group>"; };
 		8646BD122006D972005063EF /* ProfileStock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileStock.m; sourceTree = "<group>"; };
+		865E430A200837AE002D069E /* ModelBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelBase.h; sourceTree = "<group>"; };
+		865E430B200837AE002D069E /* ModelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelBase.m; sourceTree = "<group>"; };
+		865E430D2009049E002D069E /* HomeTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTabViewController.h; sourceTree = "<group>"; };
+		865E430E2009049E002D069E /* HomeTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTabViewController.m; sourceTree = "<group>"; };
+		865E43102009064F002D069E /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		865E43112009064F002D069E /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		865E4313200911FB002D069E /* ProfileTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
+		865E4314200911FB002D069E /* ProfileTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
 		C620A8C5D1F7ABDDAEEEAF1B /* libPods-Stock_IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stock_IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -172,10 +181,14 @@
 			children = (
 				86386260200439510009509E /* CustomNaviControllerViewController.h */,
 				86386261200439510009509E /* CustomNaviControllerViewController.m */,
-				86386263200439C00009509E /* HomeViewController.h */,
-				86386264200439C00009509E /* HomeViewController.m */,
 				8638626620043A220009509E /* LeftMenuViewController.h */,
 				8638626720043A220009509E /* LeftMenuViewController.m */,
+				865E430D2009049E002D069E /* HomeTabViewController.h */,
+				865E430E2009049E002D069E /* HomeTabViewController.m */,
+				865E43102009064F002D069E /* RootViewController.h */,
+				865E43112009064F002D069E /* RootViewController.m */,
+				865E4313200911FB002D069E /* ProfileTableViewController.h */,
+				865E4314200911FB002D069E /* ProfileTableViewController.m */,
 			);
 			path = UIs;
 			sourceTree = "<group>";
@@ -189,6 +202,8 @@
 				8646BD0C20065FAE005063EF /* ApiResp.m */,
 				8646BD112006D972005063EF /* ProfileStock.h */,
 				8646BD122006D972005063EF /* ProfileStock.m */,
+				865E430A200837AE002D069E /* ModelBase.h */,
+				865E430B200837AE002D069E /* ModelBase.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -418,11 +433,14 @@
 				8646BD0D20065FAE005063EF /* ApiResp.m in Sources */,
 				8638622F20042EC10009509E /* ViewController.m in Sources */,
 				8638623A20042EC10009509E /* main.m in Sources */,
+				865E4315200911FB002D069E /* ProfileTableViewController.m in Sources */,
 				8646BD0A20065A69005063EF /* Profile.m in Sources */,
 				8638622C20042EC10009509E /* AppDelegate.m in Sources */,
-				86386265200439C00009509E /* HomeViewController.m in Sources */,
+				865E430C200837AE002D069E /* ModelBase.m in Sources */,
 				8638626D200440AA0009509E /* NetworkUtil.m in Sources */,
+				865E43122009064F002D069E /* RootViewController.m in Sources */,
 				8638626820043A220009509E /* LeftMenuViewController.m in Sources */,
+				865E430F2009049E002D069E /* HomeTabViewController.m in Sources */,
 				86386262200439510009509E /* CustomNaviControllerViewController.m in Sources */,
 				8646BD102006D859005063EF /* NetworkApi.m in Sources */,
 				8646BD132006D972005063EF /* ProfileStock.m in Sources */,
