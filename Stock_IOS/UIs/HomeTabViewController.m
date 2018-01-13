@@ -20,13 +20,6 @@
     // Do any additional setup after loading the view.
     
     //configure the navigation controller
-    UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(leftMenuItemSelected)];
-    self.navigationItem.leftBarButtonItem = left;
-}
-
-- (void)leftMenuItemSelected {
-    RESideMenu *rootVc = (RESideMenu *)self.view.window.rootViewController;
-    [rootVc presentLeftMenuViewController];
 }
 
 - (void)didReceiveMemoryWarning {

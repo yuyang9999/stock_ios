@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "CustomNaviControllerViewController.h"
 #import "LeftMenuViewController.h"
 #import <RESideMenu/ResideMenu.h>
 

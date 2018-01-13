@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860E3CB12009D069002593BE /* CommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 860E3CB02009D069002593BE /* CommonUtility.m */; };
 		8638622C20042EC10009509E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638622B20042EC10009509E /* AppDelegate.m */; };
 		8638622F20042EC10009509E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638622E20042EC10009509E /* ViewController.m */; };
 		8638623220042EC10009509E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8638623020042EC10009509E /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		8638623A20042EC10009509E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638623920042EC10009509E /* main.m */; };
 		8638624420042EC10009509E /* Stock_IOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638624320042EC10009509E /* Stock_IOSTests.m */; };
 		8638624F20042EC10009509E /* Stock_IOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638624E20042EC10009509E /* Stock_IOSUITests.m */; };
-		86386262200439510009509E /* CustomNaviControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86386261200439510009509E /* CustomNaviControllerViewController.m */; };
 		8638626820043A220009509E /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638626720043A220009509E /* LeftMenuViewController.m */; };
 		8638626D200440AA0009509E /* NetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638626C200440AA0009509E /* NetworkUtil.m */; };
 		8646BD0A20065A69005063EF /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646BD0920065A69005063EF /* Profile.m */; };
@@ -26,6 +26,8 @@
 		865E430F2009049E002D069E /* HomeTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E430E2009049E002D069E /* HomeTabViewController.m */; };
 		865E43122009064F002D069E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E43112009064F002D069E /* RootViewController.m */; };
 		865E4315200911FB002D069E /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E4314200911FB002D069E /* ProfileTableViewController.m */; };
+		865E431820098178002D069E /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E431720098178002D069E /* BaseTableViewController.m */; };
+		865E431B200981A8002D069E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E431A200981A8002D069E /* BaseViewController.m */; };
 		8940C381719BAAD9E3288A07 /* libPods-Stock_IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C620A8C5D1F7ABDDAEEEAF1B /* libPods-Stock_IOS.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		0963143A760AC9E08B7B9D69 /* Pods-Stock_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock_IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stock_IOS/Pods-Stock_IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3BD913BCE8D9B0098414E2D8 /* Pods-Stock_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock_IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stock_IOS/Pods-Stock_IOS.release.xcconfig"; sourceTree = "<group>"; };
+		860E3CAF2009D069002593BE /* CommonUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUtility.h; sourceTree = "<group>"; };
+		860E3CB02009D069002593BE /* CommonUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUtility.m; sourceTree = "<group>"; };
 		8638622720042EC10009509E /* Stock_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8638622A20042EC10009509E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8638622B20042EC10009509E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,8 +69,6 @@
 		8638624A20042EC10009509E /* Stock_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stock_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8638624E20042EC10009509E /* Stock_IOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stock_IOSUITests.m; sourceTree = "<group>"; };
 		8638625020042EC10009509E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86386260200439510009509E /* CustomNaviControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNaviControllerViewController.h; sourceTree = "<group>"; };
-		86386261200439510009509E /* CustomNaviControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNaviControllerViewController.m; sourceTree = "<group>"; };
 		8638626620043A220009509E /* LeftMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
 		8638626720043A220009509E /* LeftMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		8638626B200440AA0009509E /* NetworkUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkUtil.h; sourceTree = "<group>"; };
@@ -87,6 +89,10 @@
 		865E43112009064F002D069E /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		865E4313200911FB002D069E /* ProfileTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
 		865E4314200911FB002D069E /* ProfileTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
+		865E431620098178002D069E /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		865E431720098178002D069E /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		865E4319200981A8002D069E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		865E431A200981A8002D069E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		C620A8C5D1F7ABDDAEEEAF1B /* libPods-Stock_IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stock_IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -179,8 +185,6 @@
 		8638625C200438800009509E /* UIs */ = {
 			isa = PBXGroup;
 			children = (
-				86386260200439510009509E /* CustomNaviControllerViewController.h */,
-				86386261200439510009509E /* CustomNaviControllerViewController.m */,
 				8638626620043A220009509E /* LeftMenuViewController.h */,
 				8638626720043A220009509E /* LeftMenuViewController.m */,
 				865E430D2009049E002D069E /* HomeTabViewController.h */,
@@ -189,6 +193,10 @@
 				865E43112009064F002D069E /* RootViewController.m */,
 				865E4313200911FB002D069E /* ProfileTableViewController.h */,
 				865E4314200911FB002D069E /* ProfileTableViewController.m */,
+				865E431620098178002D069E /* BaseTableViewController.h */,
+				865E431720098178002D069E /* BaseTableViewController.m */,
+				865E4319200981A8002D069E /* BaseViewController.h */,
+				865E431A200981A8002D069E /* BaseViewController.m */,
 			);
 			path = UIs;
 			sourceTree = "<group>";
@@ -222,6 +230,8 @@
 		8638626E200509FE0009509E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				860E3CAF2009D069002593BE /* CommonUtility.h */,
+				860E3CB02009D069002593BE /* CommonUtility.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -431,17 +441,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				8646BD0D20065FAE005063EF /* ApiResp.m in Sources */,
+				865E431B200981A8002D069E /* BaseViewController.m in Sources */,
 				8638622F20042EC10009509E /* ViewController.m in Sources */,
 				8638623A20042EC10009509E /* main.m in Sources */,
 				865E4315200911FB002D069E /* ProfileTableViewController.m in Sources */,
 				8646BD0A20065A69005063EF /* Profile.m in Sources */,
 				8638622C20042EC10009509E /* AppDelegate.m in Sources */,
+				860E3CB12009D069002593BE /* CommonUtility.m in Sources */,
 				865E430C200837AE002D069E /* ModelBase.m in Sources */,
 				8638626D200440AA0009509E /* NetworkUtil.m in Sources */,
 				865E43122009064F002D069E /* RootViewController.m in Sources */,
 				8638626820043A220009509E /* LeftMenuViewController.m in Sources */,
+				865E431820098178002D069E /* BaseTableViewController.m in Sources */,
 				865E430F2009049E002D069E /* HomeTabViewController.m in Sources */,
-				86386262200439510009509E /* CustomNaviControllerViewController.m in Sources */,
 				8646BD102006D859005063EF /* NetworkApi.m in Sources */,
 				8646BD132006D972005063EF /* ProfileStock.m in Sources */,
 			);
