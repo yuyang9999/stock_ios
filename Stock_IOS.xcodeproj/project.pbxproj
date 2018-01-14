@@ -24,6 +24,7 @@
 		8646BD0D20065FAE005063EF /* ApiResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646BD0C20065FAE005063EF /* ApiResp.m */; };
 		8646BD102006D859005063EF /* NetworkApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646BD0F2006D859005063EF /* NetworkApi.m */; };
 		8646BD132006D972005063EF /* ProfileStock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646BD122006D972005063EF /* ProfileStock.m */; };
+		8647E4F0200B3C1600C4FE80 /* StockDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647E4EF200B3C1600C4FE80 /* StockDetailViewController.m */; };
 		865E430C200837AE002D069E /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E430B200837AE002D069E /* ModelBase.m */; };
 		865E430F2009049E002D069E /* HomeTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E430E2009049E002D069E /* HomeTabViewController.m */; };
 		865E43122009064F002D069E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E43112009064F002D069E /* RootViewController.m */; };
@@ -87,6 +88,8 @@
 		8646BD0F2006D859005063EF /* NetworkApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkApi.m; sourceTree = "<group>"; };
 		8646BD112006D972005063EF /* ProfileStock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileStock.h; sourceTree = "<group>"; };
 		8646BD122006D972005063EF /* ProfileStock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileStock.m; sourceTree = "<group>"; };
+		8647E4EE200B3C1600C4FE80 /* StockDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockDetailViewController.h; sourceTree = "<group>"; };
+		8647E4EF200B3C1600C4FE80 /* StockDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockDetailViewController.m; sourceTree = "<group>"; };
 		865E430A200837AE002D069E /* ModelBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelBase.h; sourceTree = "<group>"; };
 		865E430B200837AE002D069E /* ModelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelBase.m; sourceTree = "<group>"; };
 		865E430D2009049E002D069E /* HomeTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTabViewController.h; sourceTree = "<group>"; };
@@ -215,6 +218,8 @@
 				860E3CBF200A1A69002593BE /* ProfileDetailViewController.m */,
 				860E3CC5200A28B7002593BE /* ProfilesPageViewController.h */,
 				860E3CC6200A28B7002593BE /* ProfilesPageViewController.m */,
+				8647E4EE200B3C1600C4FE80 /* StockDetailViewController.h */,
+				8647E4EF200B3C1600C4FE80 /* StockDetailViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -468,6 +473,7 @@
 				860E3CB12009D069002593BE /* CommonUtility.m in Sources */,
 				865E430C200837AE002D069E /* ModelBase.m in Sources */,
 				8638626D200440AA0009509E /* NetworkUtil.m in Sources */,
+				8647E4F0200B3C1600C4FE80 /* StockDetailViewController.m in Sources */,
 				865E43122009064F002D069E /* RootViewController.m in Sources */,
 				860E3CC7200A28B7002593BE /* ProfilesPageViewController.m in Sources */,
 				8638626820043A220009509E /* LeftMenuViewController.m in Sources */,

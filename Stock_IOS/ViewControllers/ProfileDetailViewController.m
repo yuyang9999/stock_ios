@@ -16,6 +16,16 @@
 #define WSWithNameAndObj(_obj, _name) __weak typeof(_obj) weak##_name = _obj;
 #define WS WSWithNameAndObj(self, Self)
 
+@interface TableViewCellAdd: UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UIButton *addBtn;
+
+@end
+
+@implementation TableViewCellAdd
+@end
+
+
 @interface ProfileDetailViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) NSMutableArray *mStocks;
@@ -38,6 +48,9 @@
     
     UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(backBtnPressed:)];
     self.navigationItem.leftBarButtonItem = backBtn;
+    
+    UIBarButtonItem *edit = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(editBtnPressed:)];
+    self.navigationItem.rightBarButtonItem = edit;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -59,6 +72,7 @@
 }
 
 #pragma mark - override parent function
+
 - (void)refreshDataSourceWithCompletionHanlder:(RefreshCompltionHandler)handler {
     if (self.mProfile) {
         WS
@@ -72,6 +86,14 @@
     }
 }
 
+- (void)editBtnPressed:(id)sender {
+    BOOL canEdit = self.mTableView.editing;
+    [self.mTableView setEditing:!canEdit animated:YES];
+}
+
+- (void)addNewStockBtnPressed:(id)sender {
+    
+}
 
 /*
 #pragma mark - Navigation
@@ -85,19 +107,63 @@
 
 #pragma mark - table view data source and delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.mStocks.count;
+    if (section == 0) {
+        return self.mStocks.count;
+    }
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"identifier" forIndexPath:indexPath];
-    ProfileStock *stock = self.mStocks[indexPath.row];
-    cell.textLabel.text = stock.sname;
-    return cell;
+    if (indexPath.section == 0) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"identifier" forIndexPath:indexPath];
+        ProfileStock *stock = self.mStocks[indexPath.row];
+        cell.textLabel.text = stock.sname;
+        return cell;
+    }
+    
+    TableViewCellAdd *addCell = [tableView dequeueReusableCellWithIdentifier:@"add" forIndexPath:indexPath];
+    
+    [addCell.addBtn addTarget:self action:@selector(addNewStockBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    return addCell;
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"stockDetailVC"];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSUInteger row = indexPath.row;
+        ProfileStock *stock = self.mStocks[row];
+        [NetworkApi deleteProfileSymbol:self.mProfile.pname symbol:stock.sid completionHandler:^(BOOL succeed, NSString *error, id obj) {
+            if (succeed) {
+                [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            }
+        }];
+    }
+}
 
 @end
