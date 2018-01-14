@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseTableViewController.h"
 
 @interface BaseViewController : UIViewController
+
+- (void)refreshDataSourceWithCompletionHanlder:(RefreshCompltionHandler)handler;
 
 @end

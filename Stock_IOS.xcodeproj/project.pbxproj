@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		860E3CB12009D069002593BE /* CommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 860E3CB02009D069002593BE /* CommonUtility.m */; };
+		860E3CC0200A1A69002593BE /* ProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 860E3CBF200A1A69002593BE /* ProfileDetailViewController.m */; };
+		860E3CC7200A28B7002593BE /* ProfilesPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 860E3CC6200A28B7002593BE /* ProfilesPageViewController.m */; };
 		8638622C20042EC10009509E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638622B20042EC10009509E /* AppDelegate.m */; };
 		8638622F20042EC10009509E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638622E20042EC10009509E /* ViewController.m */; };
 		8638623220042EC10009509E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8638623020042EC10009509E /* Main.storyboard */; };
@@ -53,6 +55,10 @@
 		3BD913BCE8D9B0098414E2D8 /* Pods-Stock_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock_IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stock_IOS/Pods-Stock_IOS.release.xcconfig"; sourceTree = "<group>"; };
 		860E3CAF2009D069002593BE /* CommonUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUtility.h; sourceTree = "<group>"; };
 		860E3CB02009D069002593BE /* CommonUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUtility.m; sourceTree = "<group>"; };
+		860E3CBE200A1A69002593BE /* ProfileDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileDetailViewController.h; sourceTree = "<group>"; };
+		860E3CBF200A1A69002593BE /* ProfileDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileDetailViewController.m; sourceTree = "<group>"; };
+		860E3CC5200A28B7002593BE /* ProfilesPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfilesPageViewController.h; sourceTree = "<group>"; };
+		860E3CC6200A28B7002593BE /* ProfilesPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfilesPageViewController.m; sourceTree = "<group>"; };
 		8638622720042EC10009509E /* Stock_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8638622A20042EC10009509E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8638622B20042EC10009509E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +128,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		860E3CC1200A1B91002593BE /* UI_Misc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI_Misc;
+			sourceTree = "<group>";
+		};
 		8638621E20042EC10009509E = {
 			isa = PBXGroup;
 			children = (
@@ -147,10 +160,11 @@
 		8638622920042EC10009509E /* Stock_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				860E3CC1200A1B91002593BE /* UI_Misc */,
 				8638626E200509FE0009509E /* Utility */,
 				8638626A2004408C0009509E /* Network */,
 				86386269200440740009509E /* Models */,
-				8638625C200438800009509E /* UIs */,
+				8638625C200438800009509E /* ViewControllers */,
 				8638622A20042EC10009509E /* AppDelegate.h */,
 				8638622B20042EC10009509E /* AppDelegate.m */,
 				8638622D20042EC10009509E /* ViewController.h */,
@@ -182,7 +196,7 @@
 			path = Stock_IOSUITests;
 			sourceTree = "<group>";
 		};
-		8638625C200438800009509E /* UIs */ = {
+		8638625C200438800009509E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				8638626620043A220009509E /* LeftMenuViewController.h */,
@@ -197,8 +211,12 @@
 				865E431720098178002D069E /* BaseTableViewController.m */,
 				865E4319200981A8002D069E /* BaseViewController.h */,
 				865E431A200981A8002D069E /* BaseViewController.m */,
+				860E3CBE200A1A69002593BE /* ProfileDetailViewController.h */,
+				860E3CBF200A1A69002593BE /* ProfileDetailViewController.m */,
+				860E3CC5200A28B7002593BE /* ProfilesPageViewController.h */,
+				860E3CC6200A28B7002593BE /* ProfilesPageViewController.m */,
 			);
-			path = UIs;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		86386269200440740009509E /* Models */ = {
@@ -451,10 +469,12 @@
 				865E430C200837AE002D069E /* ModelBase.m in Sources */,
 				8638626D200440AA0009509E /* NetworkUtil.m in Sources */,
 				865E43122009064F002D069E /* RootViewController.m in Sources */,
+				860E3CC7200A28B7002593BE /* ProfilesPageViewController.m in Sources */,
 				8638626820043A220009509E /* LeftMenuViewController.m in Sources */,
 				865E431820098178002D069E /* BaseTableViewController.m in Sources */,
 				865E430F2009049E002D069E /* HomeTabViewController.m in Sources */,
 				8646BD102006D859005063EF /* NetworkApi.m in Sources */,
+				860E3CC0200A1A69002593BE /* ProfileDetailViewController.m in Sources */,
 				8646BD132006D972005063EF /* ProfileStock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

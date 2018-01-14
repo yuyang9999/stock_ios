@@ -10,6 +10,8 @@
 #import <RESideMenu.h>
 #import "Profile.h"
 #import "NetworkApi.h"
+#import "ProfilesPageViewController.h"
+#import "ProfileDetailViewController.h"
 
 
 @interface ProfileHeaderCell: UITableViewCell
@@ -28,7 +30,7 @@
 
 
 
-@interface ProfileTableViewController ()
+@interface ProfileTableViewController () <UIPageViewControllerDataSource>
 @property (strong, nonatomic) NSMutableArray<Profile*> *mProfileList;
 
 @end
@@ -41,6 +43,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     self.mProfileList = [NSMutableArray array];
+    self.title = @"Home";
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -149,7 +152,16 @@
     }
 }
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    ProfilesPageViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"profilesPageVC"];
+    vc.mProfiles = self.mProfileList;
+    vc.mStartIndex = indexPath.row;
+//    vc.dataSource = self;
+    
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 - (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section != 1) {
@@ -218,5 +230,36 @@
  // Pass the selected object to the new view controller.
  }
  */
+
+#pragma mark - page view controller data source
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
+    if (self.mProfileList.count <= 1) {
+        return nil;
+    }
+    
+    ProfileDetailViewController *cur = (ProfileDetailViewController *)viewController;
+    Profile *p = cur.mProfile;
+    NSUInteger idx = [self.mProfileList indexOfObject:p];
+    
+    ProfileDetailViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"profileDetailVc"];
+    return vc;
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
+    if (self.mProfileList.count <= 1) {
+        return nil;
+    }
+    
+    ProfileDetailViewController *cur = (ProfileDetailViewController*)viewController;
+    Profile *p = cur.mProfile;
+    NSUInteger idx = [self.mProfileList indexOfObject:p];
+    
+    
+    ProfileDetailViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"profileDetailVc"];
+    
+    return vc;
+    
+}
+
 
 @end
